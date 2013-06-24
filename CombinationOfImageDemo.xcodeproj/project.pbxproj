@@ -19,6 +19,8 @@
 		442A50A11777DA8600EA9F44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442A50A01777DA8600EA9F44 /* ViewController.m */; };
 		442A50A41777DA8600EA9F44 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442A50A21777DA8600EA9F44 /* ViewController_iPhone.xib */; };
 		442A50A71777DA8600EA9F44 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442A50A51777DA8600EA9F44 /* ViewController_iPad.xib */; };
+		442A50B01777DAD400EA9F44 /* GestureImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 442A50AF1777DAD400EA9F44 /* GestureImageView.m */; };
+		442A50B31777DCD100EA9F44 /* IMG_0218.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 442A50B21777DCD100EA9F44 /* IMG_0218.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		442A50A01777DA8600EA9F44 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		442A50A31777DA8600EA9F44 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		442A50A61777DA8600EA9F44 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		442A50AE1777DAD400EA9F44 /* GestureImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureImageView.h; sourceTree = "<group>"; };
+		442A50AF1777DAD400EA9F44 /* GestureImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureImageView.m; sourceTree = "<group>"; };
+		442A50B21777DCD100EA9F44 /* IMG_0218.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0218.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,8 @@
 		442A507B1777DA8500EA9F44 = {
 			isa = PBXGroup;
 			children = (
+				442A50B11777DCD100EA9F44 /* Photo */,
+				442A50AD1777DAD400EA9F44 /* CombinationOfImage */,
 				442A508D1777DA8500EA9F44 /* CombinationOfImageDemo */,
 				442A50861777DA8500EA9F44 /* Frameworks */,
 				442A50851777DA8500EA9F44 /* Products */,
@@ -108,6 +115,24 @@
 				442A509D1777DA8600EA9F44 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		442A50AD1777DAD400EA9F44 /* CombinationOfImage */ = {
+			isa = PBXGroup;
+			children = (
+				442A50AE1777DAD400EA9F44 /* GestureImageView.h */,
+				442A50AF1777DAD400EA9F44 /* GestureImageView.m */,
+			);
+			path = CombinationOfImage;
+			sourceTree = "<group>";
+		};
+		442A50B11777DCD100EA9F44 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				442A50B21777DCD100EA9F44 /* IMG_0218.JPG */,
+			);
+			name = Photo;
+			path = CombinationOfImageDemo/Photo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +192,7 @@
 				442A509E1777DA8600EA9F44 /* Default-568h@2x.png in Resources */,
 				442A50A41777DA8600EA9F44 /* ViewController_iPhone.xib in Resources */,
 				442A50A71777DA8600EA9F44 /* ViewController_iPad.xib in Resources */,
+				442A50B31777DCD100EA9F44 /* IMG_0218.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +206,7 @@
 				442A50941777DA8600EA9F44 /* main.m in Sources */,
 				442A50981777DA8600EA9F44 /* AppDelegate.m in Sources */,
 				442A50A11777DA8600EA9F44 /* ViewController.m in Sources */,
+				442A50B01777DAD400EA9F44 /* GestureImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

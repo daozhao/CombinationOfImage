@@ -26,4 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)addGesture:(id)sender {
+    [self.handImageView addAllGesture];
+}
+
 @end

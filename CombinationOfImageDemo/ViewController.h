@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GestureImageView.h"
 
 @interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet GestureImageView *handImageView;
 
 @end
