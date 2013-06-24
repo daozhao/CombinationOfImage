@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "GestureImageView.h"
+#import "CombinationOfImageView.h"
 
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet GestureImageView *handImageView;
+@property (weak, nonatomic) IBOutlet CombinationOfImageView *cbImageView;
 
 @end

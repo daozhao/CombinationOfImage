@@ -31,4 +31,7 @@
     [self.handImageView addAllGesture];
 }
 
+- (IBAction)addImage:(id)sender {
+    [self.cbImageView addImage:@"IMG_0218.JPG"];
+}
 @end

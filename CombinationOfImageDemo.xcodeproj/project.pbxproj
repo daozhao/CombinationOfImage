@@ -21,6 +21,7 @@
 		442A50A71777DA8600EA9F44 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442A50A51777DA8600EA9F44 /* ViewController_iPad.xib */; };
 		442A50B01777DAD400EA9F44 /* GestureImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 442A50AF1777DAD400EA9F44 /* GestureImageView.m */; };
 		442A50B31777DCD100EA9F44 /* IMG_0218.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 442A50B21777DCD100EA9F44 /* IMG_0218.JPG */; };
+		442A50B91777EC4700EA9F44 /* CombinationOfImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 442A50B81777EC4700EA9F44 /* CombinationOfImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		442A50AE1777DAD400EA9F44 /* GestureImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureImageView.h; sourceTree = "<group>"; };
 		442A50AF1777DAD400EA9F44 /* GestureImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureImageView.m; sourceTree = "<group>"; };
 		442A50B21777DCD100EA9F44 /* IMG_0218.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0218.JPG; sourceTree = "<group>"; };
+		442A50B71777EC4700EA9F44 /* CombinationOfImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinationOfImageView.h; sourceTree = "<group>"; };
+		442A50B81777EC4700EA9F44 /* CombinationOfImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinationOfImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 			children = (
 				442A50AE1777DAD400EA9F44 /* GestureImageView.h */,
 				442A50AF1777DAD400EA9F44 /* GestureImageView.m */,
+				442A50B71777EC4700EA9F44 /* CombinationOfImageView.h */,
+				442A50B81777EC4700EA9F44 /* CombinationOfImageView.m */,
 			);
 			path = CombinationOfImage;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 				442A50981777DA8600EA9F44 /* AppDelegate.m in Sources */,
 				442A50A11777DA8600EA9F44 /* ViewController.m in Sources */,
 				442A50B01777DAD400EA9F44 /* GestureImageView.m in Sources */,
+				442A50B91777EC4700EA9F44 /* CombinationOfImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
