@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		441A55AE177D6D1400826A34 /* IMG_0217.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 441A55AD177D6D1400826A34 /* IMG_0217.JPG */; };
+		441A55B0177D79BB00826A34 /* abc.png in Resources */ = {isa = PBXBuildFile; fileRef = 441A55AF177D79BB00826A34 /* abc.png */; };
 		442A50881777DA8500EA9F44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442A50871777DA8500EA9F44 /* UIKit.framework */; };
 		442A508A1777DA8500EA9F44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442A50891777DA8500EA9F44 /* Foundation.framework */; };
 		442A508C1777DA8500EA9F44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442A508B1777DA8500EA9F44 /* CoreGraphics.framework */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		441A55AD177D6D1400826A34 /* IMG_0217.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0217.JPG; sourceTree = "<group>"; };
+		441A55AF177D79BB00826A34 /* abc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abc.png; sourceTree = "<group>"; };
 		442A50841777DA8500EA9F44 /* CombinationOfImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombinationOfImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		442A50871777DA8500EA9F44 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		442A50891777DA8500EA9F44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -136,6 +138,7 @@
 		442A50B11777DCD100EA9F44 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
+				441A55AF177D79BB00826A34 /* abc.png */,
 				441A55AD177D6D1400826A34 /* IMG_0217.JPG */,
 				442A50B21777DCD100EA9F44 /* IMG_0218.JPG */,
 			);
@@ -202,6 +205,7 @@
 				442A50A71777DA8600EA9F44 /* ViewController_iPad.xib in Resources */,
 				442A50B31777DCD100EA9F44 /* IMG_0218.JPG in Resources */,
 				441A55AE177D6D1400826A34 /* IMG_0217.JPG in Resources */,
+				441A55B0177D79BB00826A34 /* abc.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

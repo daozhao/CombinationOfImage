@@ -40,7 +40,7 @@
 }
 
 - (IBAction)addImageWithFrame:(id)sender {
-    [self.cbImageView addImageWithName:@"IMG_0217.JPG" withFrame:CGRectMake(100, 100, 300, 400)];
+    [self.cbImageView addImageWithName:@"abc.png" withFrame:CGRectMake(100, 100, 300, 400)];
 }
 
 @end

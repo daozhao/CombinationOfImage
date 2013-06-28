@@ -69,7 +69,7 @@
     
     imageView = [[GestureImageView alloc] initWithFrame:frame];
     imageView.image = image;
-    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    imageView.contentMode = (image.size.width > frame.size.width || image.size.height > frame.size.height ) ? UIViewContentModeScaleAspectFit : UIViewContentModeCenter ; 
     [self addImageView:imageView];
 }
 
