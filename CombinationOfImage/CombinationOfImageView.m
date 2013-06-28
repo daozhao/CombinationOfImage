@@ -31,6 +31,7 @@
     if (self) {
         self.multipleTouchEnabled = YES;
         self.userInteractionEnabled = YES;
+        self.clipsToBounds = YES;
         // Initialization code
     }
     return self;
@@ -38,13 +39,24 @@
 
 - (void) addImage:(NSString *)imageName
 {
-    GestureImageView *image = [[GestureImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
-    [image addAllGesture];
-    [self.imageList addObject:image];
-    [self addSubview:image];
+//    GestureImageView *image = [[GestureImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
+    GestureImageView *imageView;
+    UIImage *image = [UIImage imageNamed:imageName];
+    if ( image.size.height > self.bounds.size.width || image.size.width > self.bounds.size.width ) {
+        CGSize size = [self sizeThatFits:image.size];
+        imageView = [[GestureImageView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
+        imageView.image = image;
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+    } else {
+        imageView = [[GestureImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
+    }
+//    GestureImageView *image = [[GestureImageView alloc] initWithImage:<#(UIImage *)#>
+    [imageView addAllGesture];
+    [self.imageList addObject:imageView];
+    [self addSubview:imageView];
     
     self.clipsToBounds = YES;
-//    self.multipleTouchEnabled = YES;
+    //    self.multipleTouchEnabled = YES;
 //    self.userInteractionEnabled = YES;
 }
 
