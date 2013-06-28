@@ -14,6 +14,11 @@
 @property (nonatomic,readonly) NSMutableArray *imageList;
 
 
-- (void) addImage:(NSString *)imageName;
+- (void) addImage:(UIImage *) image;
+- (void) addImageWithName:(NSString *)imageName;
+
+-(void) changeImageWithName:(NSString *)name atIndex:(NSInteger)index;
+-(void) changeImage:(UIImage *)image atIndex:(NSInteger)index;
+
 
 @end

@@ -32,6 +32,10 @@
 }
 
 - (IBAction)addImage:(id)sender {
-    [self.cbImageView addImage:@"IMG_0218.JPG"];
+    [self.cbImageView addImageWithName:@"IMG_0218.JPG"];
+}
+
+- (IBAction)changeImage:(id)sender {
+    [self.cbImageView changeImageWithName:@"IMG_0217.JPG" atIndex:0];
 }
 @end

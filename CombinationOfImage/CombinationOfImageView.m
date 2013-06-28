@@ -37,28 +37,53 @@
     return self;
 }
 
-- (void) addImage:(NSString *)imageName
+- (void) addImageWithName:(NSString *)imageName
 {
 //    GestureImageView *image = [[GestureImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
-    GestureImageView *imageView;
+   
     UIImage *image = [UIImage imageNamed:imageName];
+    
+    [self addImage:image];
+    
+}
+
+- (void) addImage:(UIImage *) image
+{
+     GestureImageView *imageView;
     if ( image.size.height > self.bounds.size.width || image.size.width > self.bounds.size.width ) {
         CGSize size = [self sizeThatFits:image.size];
         imageView = [[GestureImageView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
         imageView.image = image;
         imageView.contentMode = UIViewContentModeScaleAspectFit;
     } else {
-        imageView = [[GestureImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
+        imageView = [[GestureImageView alloc] initWithImage:image];
     }
-//    GestureImageView *image = [[GestureImageView alloc] initWithImage:<#(UIImage *)#>
+    [self addImageView:imageView];
+    
+}
+
+- (void) addImageView:(GestureImageView *) imageView
+{
     [imageView addAllGesture];
     [self.imageList addObject:imageView];
     [self addSubview:imageView];
     
     self.clipsToBounds = YES;
-    //    self.multipleTouchEnabled = YES;
-//    self.userInteractionEnabled = YES;
 }
+
+-(void) changeImageWithName:(NSString *)name atIndex:(NSInteger)index
+{
+    [self changeImage:[UIImage imageNamed:name] atIndex:index];
+}
+
+-(void) changeImage:(UIImage *)image atIndex:(NSInteger)index
+{
+    if ( index < self.imageList.count ){
+        ((GestureImageView *)self.imageList[index]).image = image;
+    }
+}
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.
