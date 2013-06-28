@@ -38,4 +38,9 @@
 - (IBAction)changeImage:(id)sender {
     [self.cbImageView changeImageWithName:@"IMG_0217.JPG" atIndex:0];
 }
+
+- (IBAction)addImageWithFrame:(id)sender {
+    [self.cbImageView addImageWithName:@"IMG_0217.JPG" withFrame:CGRectMake(100, 100, 300, 400)];
+}
+
 @end

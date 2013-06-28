@@ -39,27 +39,38 @@
 
 - (void) addImageWithName:(NSString *)imageName
 {
-//    GestureImageView *image = [[GestureImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
-   
+    [self addImageWithName:imageName withFrame:CGRectZero];
+}
+
+- (void) addImageWithName:(NSString *)imageName withFrame:(CGRect) frame
+{
     UIImage *image = [UIImage imageNamed:imageName];
     
-    [self addImage:image];
-    
+    [self addImage:image withFrame:frame];
 }
 
 - (void) addImage:(UIImage *) image
 {
-     GestureImageView *imageView;
-    if ( image.size.height > self.bounds.size.width || image.size.width > self.bounds.size.width ) {
-        CGSize size = [self sizeThatFits:image.size];
-        imageView = [[GestureImageView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
-        imageView.image = image;
-        imageView.contentMode = UIViewContentModeScaleAspectFit;
-    } else {
-        imageView = [[GestureImageView alloc] initWithImage:image];
+    [self addImage:image withFrame:CGRectZero];
+}
+
+- (void) addImage:(UIImage *) image withFrame:(CGRect) frame
+{
+    GestureImageView *imageView;
+    if ( CGRectEqualToRect(frame, CGRectZero) ){
+        if ( image.size.height > self.bounds.size.width || image.size.width > self.bounds.size.width ) {
+            CGSize size = [self sizeThatFits:image.size];
+            frame = CGRectMake(0, 0, size.width, size.height);
+        } else {
+            frame = CGRectMake(0, 0, image.size.width, image.size.height);
+            //            imageView = [[GestureImageView alloc] initWithImage:image];
+        }
     }
-    [self addImageView:imageView];
     
+    imageView = [[GestureImageView alloc] initWithFrame:frame];
+    imageView.image = image;
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    [self addImageView:imageView];
 }
 
 - (void) addImageView:(GestureImageView *) imageView

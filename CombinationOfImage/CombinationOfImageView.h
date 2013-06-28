@@ -17,6 +17,9 @@
 - (void) addImage:(UIImage *) image;
 - (void) addImageWithName:(NSString *)imageName;
 
+- (void) addImage:(UIImage *) image withFrame:(CGRect) frame;
+- (void) addImageWithName:(NSString *)imageName withFrame:(CGRect) frame;
+
 -(void) changeImageWithName:(NSString *)name atIndex:(NSInteger)index;
 -(void) changeImage:(UIImage *)image atIndex:(NSInteger)index;
 
