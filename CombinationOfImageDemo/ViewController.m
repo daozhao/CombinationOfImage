@@ -34,9 +34,15 @@
 - (IBAction)addImage:(id)sender {
     [self.cbImageView addImageWithName:@"IMG_0218.JPG"];
 }
+- (IBAction)addFixImage:(id)sender {
+    [self.cbImageView addFixImageWithName:@"IMG_0218.JPG"];
+}
 
 - (IBAction)changeImage:(id)sender {
     [self.cbImageView changeImageWithName:@"IMG_0217.JPG" atIndex:0];
+}
+- (IBAction)addFixImageWithFrame:(id)sender {
+    [self.cbImageView addFixImageWithName:@"abc.png" withFrame:CGRectMake(100, 100, 300, 400)];
 }
 
 - (IBAction)addImageWithFrame:(id)sender {

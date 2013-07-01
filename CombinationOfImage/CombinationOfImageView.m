@@ -57,25 +57,53 @@
 - (void) addImage:(UIImage *) image withFrame:(CGRect) frame
 {
     GestureImageView *imageView;
+    imageView = [[GestureImageView alloc] init];
+    
+    [self addImageView:imageView withImage:image withFrame:frame];
+    
+    [imageView addAllGesture];
+}
+
+- (void) addFixImage:(UIImage *) image
+{
+   [self addFixImage:image withFrame:CGRectZero];
+}
+- (void) addFixImageWithName:(NSString *)imageName
+{
+    [self addFixImageWithName:imageName withFrame:CGRectZero];
+}
+
+- (void) addFixImage:(UIImage *) image withFrame:(CGRect) frame
+{
+    UIImageView *imageView;
+    imageView = [[UIImageView alloc] init];
+    
+    [self addImageView:imageView withImage:image withFrame:frame];
+    
+}
+- (void) addFixImageWithName:(NSString *)imageName withFrame:(CGRect) frame
+{
+    UIImage *image = [UIImage imageNamed:imageName];
+    
+    [self addFixImage:image withFrame:frame];
+}
+
+- (void) addImageView:(UIImageView *) imageView withImage:(UIImage *) image withFrame:(CGRect) frame
+{
+    
     if ( CGRectEqualToRect(frame, CGRectZero) ){
         if ( image.size.height > self.bounds.size.width || image.size.width > self.bounds.size.width ) {
             CGSize size = [self sizeThatFits:image.size];
             frame = CGRectMake(0, 0, size.width, size.height);
         } else {
             frame = CGRectMake(0, 0, image.size.width, image.size.height);
-            //            imageView = [[GestureImageView alloc] initWithImage:image];
         }
     }
     
-    imageView = [[GestureImageView alloc] initWithFrame:frame];
+    imageView.frame = frame;
     imageView.image = image;
-    imageView.contentMode = (image.size.width > frame.size.width || image.size.height > frame.size.height ) ? UIViewContentModeScaleAspectFit : UIViewContentModeCenter ; 
-    [self addImageView:imageView];
-}
-
-- (void) addImageView:(GestureImageView *) imageView
-{
-    [imageView addAllGesture];
+    imageView.contentMode = (image.size.width > frame.size.width || image.size.height > frame.size.height ) ? UIViewContentModeScaleAspectFit : UIViewContentModeCenter ;
+    
     [self.imageList addObject:imageView];
     [self addSubview:imageView];
     
@@ -90,7 +118,7 @@
 -(void) changeImage:(UIImage *)image atIndex:(NSInteger)index
 {
     if ( index < self.imageList.count ){
-        ((GestureImageView *)self.imageList[index]).image = image;
+        ((UIImageView *)self.imageList[index]).image = image;
     }
 }
 

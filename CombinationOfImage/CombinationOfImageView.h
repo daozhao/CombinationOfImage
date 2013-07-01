@@ -20,6 +20,12 @@
 - (void) addImage:(UIImage *) image withFrame:(CGRect) frame;
 - (void) addImageWithName:(NSString *)imageName withFrame:(CGRect) frame;
 
+- (void) addFixImage:(UIImage *) image;
+- (void) addFixImageWithName:(NSString *)imageName;
+
+- (void) addFixImage:(UIImage *) image withFrame:(CGRect) frame;
+- (void) addFixImageWithName:(NSString *)imageName withFrame:(CGRect) frame;
+
 -(void) changeImageWithName:(NSString *)name atIndex:(NSInteger)index;
 -(void) changeImage:(UIImage *)image atIndex:(NSInteger)index;
 
