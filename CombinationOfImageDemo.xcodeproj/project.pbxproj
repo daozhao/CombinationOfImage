@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		441969FA17855C5A0089EA7B /* binocular@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441969F817855C590089EA7B /* binocular@2x.png */; };
 		441969FB17855C5A0089EA7B /* 24.png in Resources */ = {isa = PBXBuildFile; fileRef = 441969F917855C5A0089EA7B /* 24.png */; };
+		44196A091785685E0089EA7B /* me@2x.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 44196A081785685E0089EA7B /* me@2x.JPG */; };
 		441A55AE177D6D1400826A34 /* IMG_0217.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 441A55AD177D6D1400826A34 /* IMG_0217.JPG */; };
 		442A50881777DA8500EA9F44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442A50871777DA8500EA9F44 /* UIKit.framework */; };
 		442A508A1777DA8500EA9F44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442A50891777DA8500EA9F44 /* Foundation.framework */; };
@@ -23,13 +24,13 @@
 		442A50A41777DA8600EA9F44 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442A50A21777DA8600EA9F44 /* ViewController_iPhone.xib */; };
 		442A50A71777DA8600EA9F44 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442A50A51777DA8600EA9F44 /* ViewController_iPad.xib */; };
 		442A50B01777DAD400EA9F44 /* GestureImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 442A50AF1777DAD400EA9F44 /* GestureImageView.m */; };
-		442A50B31777DCD100EA9F44 /* IMG_0218.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 442A50B21777DCD100EA9F44 /* IMG_0218.JPG */; };
 		442A50B91777EC4700EA9F44 /* CombinationOfImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 442A50B81777EC4700EA9F44 /* CombinationOfImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		441969F817855C590089EA7B /* binocular@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "binocular@2x.png"; sourceTree = "<group>"; };
 		441969F917855C5A0089EA7B /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 24.png; sourceTree = "<group>"; };
+		44196A081785685E0089EA7B /* me@2x.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "me@2x.JPG"; sourceTree = "<group>"; };
 		441A55AD177D6D1400826A34 /* IMG_0217.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0217.JPG; sourceTree = "<group>"; };
 		442A50841777DA8500EA9F44 /* CombinationOfImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombinationOfImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		442A50871777DA8500EA9F44 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -50,7 +51,6 @@
 		442A50A61777DA8600EA9F44 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		442A50AE1777DAD400EA9F44 /* GestureImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureImageView.h; sourceTree = "<group>"; };
 		442A50AF1777DAD400EA9F44 /* GestureImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureImageView.m; sourceTree = "<group>"; };
-		442A50B21777DCD100EA9F44 /* IMG_0218.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0218.JPG; sourceTree = "<group>"; };
 		442A50B71777EC4700EA9F44 /* CombinationOfImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinationOfImageView.h; sourceTree = "<group>"; };
 		442A50B81777EC4700EA9F44 /* CombinationOfImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinationOfImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,10 +140,10 @@
 		442A50B11777DCD100EA9F44 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
+				44196A081785685E0089EA7B /* me@2x.JPG */,
 				441969F817855C590089EA7B /* binocular@2x.png */,
 				441969F917855C5A0089EA7B /* 24.png */,
 				441A55AD177D6D1400826A34 /* IMG_0217.JPG */,
-				442A50B21777DCD100EA9F44 /* IMG_0218.JPG */,
 			);
 			name = Photo;
 			path = CombinationOfImageDemo/Photo;
@@ -206,10 +206,10 @@
 				442A509E1777DA8600EA9F44 /* Default-568h@2x.png in Resources */,
 				442A50A41777DA8600EA9F44 /* ViewController_iPhone.xib in Resources */,
 				442A50A71777DA8600EA9F44 /* ViewController_iPad.xib in Resources */,
-				442A50B31777DCD100EA9F44 /* IMG_0218.JPG in Resources */,
 				441A55AE177D6D1400826A34 /* IMG_0217.JPG in Resources */,
 				441969FA17855C5A0089EA7B /* binocular@2x.png in Resources */,
 				441969FB17855C5A0089EA7B /* 24.png in Resources */,
+				44196A091785685E0089EA7B /* me@2x.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

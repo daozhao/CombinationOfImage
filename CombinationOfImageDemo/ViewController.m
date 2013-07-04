@@ -32,10 +32,10 @@
 }
 
 - (IBAction)addImage:(id)sender {
-    [self.cbImageView addImageWithName:@"IMG_0218.JPG"];
+    [self.cbImageView addImageWithName:@"me.JPG"];
 }
 - (IBAction)addFixImage:(id)sender {
-    [self.cbImageView addFixImageWithName:@"IMG_0218.JPG"];
+    [self.cbImageView addFixImageWithName:@"me.JPG"];
 }
 
 - (IBAction)changeImage:(id)sender {
@@ -52,7 +52,6 @@
     [self.cbImageView addImageWithName:@"24.png"];
 }
 - (IBAction)addLogoWithFrame:(id)sender {
-    
     [self.cbImageView addImageWithName:@"24.png" withFrame:CGRectMake(100, 100, 256, 256)];
 }
 
@@ -60,8 +59,7 @@
     [self.cbImageView addImageWithName:@"binocular.png"];
 }
 - (IBAction)addLogo2xWithFrame:(id)sender {
-//    [self.cbImageView addImageWithName:@"binocular.png" withFrame:CGRectMake(100, 100, 384, 384)];
-    
+    [self.cbImageView addImageWithName:@"binocular.png" withFrame:CGRectMake(100, 100, 384, 384)];
 }
 
 @end

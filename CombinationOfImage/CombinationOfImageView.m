@@ -118,7 +118,11 @@
 -(void) changeImage:(UIImage *)image atIndex:(NSInteger)index
 {
     if ( index < self.imageList.count ){
-        ((UIImageView *)self.imageList[index]).image = image;
+        UIImageView *imageView = ((UIImageView *)self.imageList[index]);
+        
+        imageView.contentMode = (image.size.width > imageView.frame.size.width || image.size.height > imageView.frame.size.height ) ? UIViewContentModeScaleAspectFit : UIViewContentModeCenter ;
+        
+        imageView.image = image;
     }
 }
 
