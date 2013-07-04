@@ -48,5 +48,20 @@
 - (IBAction)addImageWithFrame:(id)sender {
     [self.cbImageView addImageWithName:@"abc.png" withFrame:CGRectMake(100, 100, 300, 400)];
 }
+- (IBAction)addLogo:(id)sender {
+    [self.cbImageView addImageWithName:@"24.png"];
+}
+- (IBAction)addLogoWithFrame:(id)sender {
+    
+    [self.cbImageView addImageWithName:@"24.png" withFrame:CGRectMake(100, 100, 256, 256)];
+}
+
+- (IBAction)addLogo2X:(id)sender {
+    [self.cbImageView addImageWithName:@"binocular.png"];
+}
+- (IBAction)addLogo2xWithFrame:(id)sender {
+//    [self.cbImageView addImageWithName:@"binocular.png" withFrame:CGRectMake(100, 100, 384, 384)];
+    
+}
 
 @end
